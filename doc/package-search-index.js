@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"careerhub"},{"l":"careerhub.models"},{"l":"careerhub.services"},{"l":"careerhub.services.company"},{"l":"careerhub.services.dataManagement"},{"l":"careerhub.services.staff"},{"l":"careerhub.services.student"},{"l":"careerhub.storage"},{"l":"careerhub.utils"}];updateSearchResults();

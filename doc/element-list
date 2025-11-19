@@ -1,0 +1,9 @@
+careerhub
+careerhub.models
+careerhub.services
+careerhub.services.company
+careerhub.services.dataManagement
+careerhub.services.staff
+careerhub.services.student
+careerhub.storage
+careerhub.utils
