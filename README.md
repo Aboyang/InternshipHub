@@ -17,7 +17,7 @@ You may compile and run the system using the following commands in **terminal**:
 git clone https://github.com/Aboyang/InternshipHub.git
 
 # 2. Enter the project folder
-cd InternshipHub
+cd InternshipHub-main
 
 # 3. Remove old compiled output (optional)
 rm -rf out
@@ -31,7 +31,7 @@ java -cp out careerhub.Main
 
 ---
 
-## Project Structure
+## Key Project Structure
 
 ```
 InternshipHub/
@@ -39,21 +39,21 @@ InternshipHub/
 ├── src/careerhub/            # All Java source code
 │   ├── models/               # Entity classes (Student, Staff, Internship, Application…)
 │   ├── services/             # Control / business logic layer
-│   ├── storage/              # Data persistence (DataManager, CSVUtil)
+│   ├── storage/              # Data persistence (DataManager, Repository)
+│   ├── utils/                # Utils (MenuFactory, CSVUtil)
 │   ├── Menu.java             # CLI UI logic (Boundary)
 │   └── Main.java             # Entry point
 │
 ├── data/                     # CSV files for persistent storage
 │   ├── students.csv
-│   └── staff.java   
-│  
+│   └── staff.csv   
 │
-├── Diagrams/                 # UML diagrams (Class, Sequence, Use Case, Activity)
+├── Diagrams/                 # UML diagrams (Class, Sequence)
 │
 ├── doc/                      # Javadoc website (HTML)
 │   └── index.html            # Open this in your browser to view documentation
 │
-├── Report/                   # Final written report (implementation, diagrams, analysis)
+├── Report/                   # Final written report (implementation, design principles, analysis)
 │
 └── README.md                 # This file
 ```
@@ -75,7 +75,7 @@ doc/index.html
 
 3. Double-click `index.html`
 4. Your browser will open the full documentation site
-   (methods, classes, inheritance, descriptions, diagrams if any)
+   (methods, classes, inheritance, descriptions)
 
 If you need to regenerate Javadoc manually, use:
 
@@ -89,14 +89,14 @@ javadoc -d doc -sourcepath src -subpackages careerhub
 
 ### **src/careerhub/**
 
-The full Java source code structured using OOP layering
+The full Java source code is structured using OOP layering
 
 ### **data/**
-Contains CSV data to initialize the program:
+Contains CSV data to initialise the program:
 * `students.csv`
 * `staff.csv`
 
-After running program, it also contains all saved CSV data that persists states:
+After running the program, it also contains all saved CSV data that persists all the states:
 * `users.csv`
 * `internships.csv`
 * `applications.csv`
@@ -106,7 +106,6 @@ If any file is missing, the system automatically boots with **fresh seed data** 
 ### **Diagrams/**
 
 All UML diagrams required:
-
 * Class Diagram
 * Sequence Diagrams
 
